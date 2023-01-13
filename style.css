@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace, monospace;
+    font-family: Courier, monospace;
+    cursor: url('arrow.cur'), pointer;
 }
 
 h1 {
@@ -36,7 +37,7 @@ nav {
 
 nav img {
     width: 200px;
-    cursor: pointer;
+    cursor: url('arrow.cur'), pointer;
 }
 
 nav .navigation {
@@ -78,6 +79,18 @@ nav .navigation ul li a.blue {
     color: rgb(250, 250, 255);
     border: 1px solid #ffffff;
 }
+nav .navigation ul li a.user {
+    font-size: 0.6rem;
+    padding: 13px 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(250, 250, 255);
+    border: 1px solid #ffffff;
+}
+
 
 #menu-btn {
     width: 30px;
@@ -98,7 +111,7 @@ nav .navigation ul li a.blue {
 
 /* Home Page */
 #home {
-    background-image: linear-gradient(rgba(252, 252, 255, 0.5), rgba(179, 179, 180, 0.5)), url("school.jpg");
+    background-image: linear-gradient(rgba(252, 252, 255, 0.5), rgba(179, 179, 180, 0.5)), url("slider1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -206,16 +219,16 @@ nav .navigation ul li a.blue {
 
 #course .course-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 1rem;
     margin-top: 50px;
 }
 
 #course .course-box .courses {
-    text-align: start;
+    text-align: center;
     position: relative;
     background: #F9F9FF;
-    height: 100%;
+    height: 70%;
 }
 
 #course .course-box .courses img {
@@ -250,7 +263,7 @@ nav .navigation ul li a.blue {
 
 /* Home Page Registration */
 #registration {
-    font-family: monospace, monospace;
+    font-family: Courier, monospace;
     margin-top: 8vw;
     padding: 6vw 8vw 6vw 8vw;
     background-image: linear-gradient(rgba(252, 252, 255, 0.5), rgba(179, 179, 180, 0.5)), url("typing.JPG");
@@ -323,7 +336,7 @@ nav .navigation ul li a.blue {
 
 /* About Page */
 #about-home {
-    background-image: linear-gradient(rgba(198, 198, 199, 0.5), rgba(179, 179, 180, 0.5)), url("oldcode.png");
+    background-image: linear-gradient(rgb(56, 119, 245), rgb(56, 119, 245)), url("white.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -332,7 +345,7 @@ nav .navigation ul li a.blue {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 70vh;
+    height: 30vh;
     padding-top: 100px;
 }
 
@@ -412,12 +425,14 @@ nav .navigation ul li a.blue {
     height: auto;
 }
 
-/* Blog Page */
+
+/* Info Page */
 #blog-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding: 8vw;
+    text-align: center;
 }
 
 #blog-container .blogs {
@@ -479,14 +494,13 @@ nav .navigation ul li a.blue {
     font-weight: 500;
 }
 
-/* Contact  Page */
+/* Contact Page */
 #contact {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding: 8vw;
 }
-
 #contact .getin {
     width: 350px;
 }
@@ -708,16 +722,6 @@ nav .navigation ul li a.blue {
     /* Blog Section */
     #blog-container {
         padding: 8vw 4vw;
-    }
-    /* Post Section */
-    #blog-container .postpage {
-        width: 100%;
-        margin-top: 30px;
-    }
-    #blog-container .postpage img {
-        width: 100%;
-        height: 50vh;
-        object-fit: cover;
     }
     /* Course Inner */
     #course-inner {
